@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explainer</title>
+    <link rel="icon" href="/favicon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="inspector"></div>
+  </body>
+  <script>
+    console.log("HTML - start up JS Engine");
+    const s = document.createElement("script");
+    if (location.href.match(/\/projects/))
+      s.src = "/projects/quest-for-interactive-apps/dist/quest.bundle.js";
+    else s.src = "/dist/quest.bundle.js";
+    document.body.appendChild(s);
+  </script>
+</html>

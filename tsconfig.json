@@ -1,0 +1,63 @@
+// {
+//   "compilerOptions": {
+//     "moduleResolution": "node",
+//     "module": "esnext",
+//     "target": "es6",
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "allowJs": true,
+//     "checkJs": false,
+//     "jsx": "preserve",
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "noEmit": true,
+//     "incremental": true,
+//     "sourceMap": true,
+//     "allowSyntheticDefaultImports": true,
+//     "noImplicitAny": false,
+//     "baseUrl": "./"
+//   },
+//   "exclude": ["node_modules"],
+//   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.json"]
+// }
+
+{
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["es2022", "dom"],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "preserve",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "rootDir": "./",
+    "isolatedModules": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {},
+    "rootDirs": [],
+    "types": ["@webgpu/types", "jest"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": false,
+    "typeRoots": ["./node_modules/@types", "./node_modules"],
+    "traceResolution": false
+  },
+  "exclude": [
+    "babel.config.*",
+    "*/coverage/*",
+    "**/*.test.ts",
+    "node_modules",
+    "build"
+  ]
+}
