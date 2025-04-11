@@ -25,11 +25,14 @@ export const App = () => {
 
   console.log("this is the start", makeRoutes());
 
-  return (
-    <UseInspect fiber={fiber} container={inspectRoot}>
-      {router}
-    </UseInspect>
-  );
+  if (isDevelopment)
+    return (
+      <UseInspect fiber={fiber} container={inspectRoot}>
+        {router}
+      </UseInspect>
+    );
+
+  return { router };
 };
 
 const globalStyles = globalCss({
