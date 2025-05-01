@@ -32,7 +32,7 @@ export const App = () => {
       </UseInspect>
     );
 
-  return { router };
+  return <>{router}</>;
 };
 
 const globalStyles = globalCss({
